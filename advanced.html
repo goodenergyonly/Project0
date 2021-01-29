@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0"> 
+        <link rel="stylesheet" href="style.css"/>
+        <title>Advanced Search</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a class="active" href="image.html">Image Search</a></li>
+            </ul>
+            <ul>
+                <li><a  class="active" href="index.html">Google Search</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <div class="headline">Advanced Search</div>
+            <div class="line"></div>
+            <div id="form_body">
+                <form action="https://google.com/search" method="GET" name="f">
+                    <table>
+                        <th class="title_left">
+                            Find pages with...
+                        </th>
+                        <th>
+                            <div class="spacer"></div>
+                        </th>
+                        <th class="title_right">
+                            To do this in the search box.
+                        </th>
+
+                        <tr>
+                            <td class="criteria">all these words:</td>
+                            
+                            <td>
+                                <input type="text" id="all_words" class="form_component" name="as_q">
+                            </td>
+                            <td>
+                                <span class="description">Type in important words e.g. tri-colour rat terrier</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="criteria">this exact word or phrase:</td>
+                            <td><input type="text" id="exact" class="form_component" name="as_epq"></td>
+                            <td class="description">Put exact words in quotes: "rat terrier"</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="criteria">any of these words:</td>
+                            <td><input type="text" id="any" class="form_component" name="as_oq"></td>
+                            <td class="description">Type OR between all the words you want: miniature OR standard</td>
+                        </tr>
+                   
+                        <tr>
+                            <td class="criteria">none of these words:</td>
+                            <td><input type="text" id="none" class="form_component" name="as_eq"></td>
+                            <td class="description">Put a minus sign just before words that you don't want: -rodent, 
+                                -"Jack Russell"</td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td><td class="submit"><input type="submit" value="Advanced Search"></td>
+                    </table>
+                
+                </form>
+            </div>
+        </article>
+
+    </body>
+
+</html>
